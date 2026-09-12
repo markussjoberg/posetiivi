@@ -1,0 +1,17 @@
+{
+  "best_val": 0.029330935329198837,
+  "steps": 2000,
+  "args": {
+    "data": "training/data/prepared_masurkka",
+    "out": "models/masurkka",
+    "init": "training/ckpt/best.pt",
+    "layers": 4,
+    "dim": 256,
+    "heads": 4,
+    "seq_len": 4096,
+    "batch": 8,
+    "steps": 2000,
+    "lr": 0.0001,
+    "no_amp": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "best_val": 0.04853985831141472,
+  "steps": 3000,
+  "args": {
+    "data": "training/data/prepared_polkka",
+    "out": "models/polkka",
+    "init": "training/ckpt/best.pt",
+    "layers": 4,
+    "dim": 256,
+    "heads": 4,
+    "seq_len": 4096,
+    "batch": 8,
+    "steps": 3000,
+    "lr": 0.0001,
+    "no_amp": false
+  }
+}

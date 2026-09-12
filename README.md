@@ -53,9 +53,7 @@ mukana. Käyttö: `--engine lyria` ja `export GEMINI_API_KEY=...`.
 
 ```bash
 sudo apt install python3-pip fluidsynth libfluidsynth3 fluid-soundfont-gm
-# Projekti asuu toistaiseksi home-repon branchilla:
-git clone -b claude/raspi-lyria-midi-controller-saculz \
-    https://github.com/markussjoberg/home posetiivi
+git clone https://github.com/markussjoberg/posetiivi.git
 cd posetiivi
 pip install .              # MIDI-koneisto
 pip install .[lyria]       # + pilvikoneisto jos haluat molemmat
@@ -133,3 +131,13 @@ synteettisellä datalla.
 - Markov-melodia omista MIDI-tiedostoista (v1-posetiivin nauhat tyylilähteeksi)
 - GPIO-napit, genre-liu'ut (MCP3008-ADC) ja pyörivä valitsin LiveParams-säätöihin
 - RAVE-koneisto neljänneksi moodiksi (reaaliaikainen neurosynteesi pyörii Pi 4/5:llä)
+
+## Tallennetut mallipainot
+
+Soittimen oletusmalli on `training/ckpt/best.pt`. `training/ckpt/last.pt`
+on koulutuksen viimeinen tallennus. `models/` sisältää aiempien
+genrekohtaisten kokeilujen painot ja koulutustiedot; ne eivät ole
+soittimen käytössä. Nykytilanne ja tunnetut puutteet: [docs/JATKO.md](docs/JATKO.md).
+
+Paikallinen `config.toml`, SoundFont-äänipankki, Python-ympäristö ja
+koulutusaineiston massatiedostot eivät kuulu repositorioon.

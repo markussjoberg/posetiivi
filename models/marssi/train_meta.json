@@ -1,0 +1,17 @@
+{
+  "best_val": 0.05863030627369881,
+  "steps": 3000,
+  "args": {
+    "data": "training/data/prepared_marssi",
+    "out": "models/marssi",
+    "init": "training/ckpt/best.pt",
+    "layers": 4,
+    "dim": 256,
+    "heads": 4,
+    "seq_len": 4096,
+    "batch": 8,
+    "steps": 3000,
+    "lr": 0.0001,
+    "no_amp": false
+  }
+}
